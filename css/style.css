@@ -84,6 +84,10 @@ p{
     font-size: 1rem;
 }
 
+h1 + p{
+    padding: 0 2rem;
+}
+
 .annual{
     border-radius: .5rem;
     gap: 5.5rem;
