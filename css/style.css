@@ -1,0 +1,156 @@
+:root{
+/* Colors */
+
+/* Primary */
+
+    --clr-Pale-blue: hsl(225, 100%, 94%);
+    --clr-Bright-blue: hsl(245, 75%, 52%);
+    --clr-light-blue: hsl(245, 81%, 60%);
+
+/* Neutral */
+
+    --clr-Very-pale-blue: hsl(225, 100%, 98%);
+    --clr-Desaturated-blue: hsl(224, 23%, 55%);
+    --clr-Darkblue: hsl(223, 47%, 23%);
+
+/* Typography */
+
+/* Body Copy */
+
+    --fs-base: 16px;
+
+/* Font */
+    --ff: 'Red Hat Display', sans-serif;
+    --fw-light: 500;
+    --fw-medium: 700;
+    --fw-bold: 900;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--ff);
+    color: var(--clr-Desaturated-blue);
+    background-color: var(--clr-Pale-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.clrDarkblue{
+    color: var(--clr-Darkblue);
+}
+
+.flex{
+    display: flex;
+}
+
+main{
+    background-color: white;
+    flex-direction: column;
+    max-width: 400px;
+    margin: .5rem 1.5rem;
+    border-radius: 1rem;
+    font-weight: var(--fw-light);
+}
+
+main > img{
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+section{
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem 2rem;
+}
+
+.summary{
+    margin: .4rem;
+    text-align: center;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 1.5rem;
+    font-weight: var(--fw-bold);
+}
+
+p{
+    font-size: 1rem;
+}
+
+.annual{
+    border-radius: .5rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--clr-Very-pale-blue);
+    padding: 1rem;
+    margin-bottom: .8rem;
+}
+
+h3{
+    font-weight: var(--fw-bold);
+}
+
+a{
+    font-weight: var(--fw-medium);
+    color: var(--clr-Bright-blue);
+    cursor: pointer;
+}
+
+a:hover{
+    color: var(--clr-light-blue);
+    text-decoration: none;
+}
+
+h3, span, a{
+    line-height: 1.5;
+    font-size: .8rem;
+}
+
+.plan{
+    gap: 1rem;
+}
+
+.buttons{
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.payment, .cancel{
+    text-align: center;
+    padding: .5rem;
+    font-weight: var(--fw-medium);
+    cursor: pointer;
+}
+
+.payment{
+    color: var(--clr-Very-pale-blue);
+    background-color: var(--clr-Bright-blue);
+    box-shadow: 1px 3px 1rem var(--clr-Desaturated-blue);
+    border-radius: .5rem;
+}
+
+.payment:hover{
+    background-color: var(--clr-light-blue);
+}
+
+.cancel:hover{
+    color: var(--clr-Darkblue);
+    font-weight: var(--fw-bold);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media (max-width:400px) {
+    .summary{
+        padding: .3rem;
+    }
+}
