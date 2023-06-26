@@ -33,7 +33,10 @@
 body{
     font-family: var(--ff);
     color: var(--clr-Desaturated-blue);
-    background-color: var(--clr-Pale-blue);
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: #E1E9Ff;
+    background-size: contain;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -55,6 +58,7 @@ main{
     max-width: 470px;
     border-radius: 1rem;
     font-weight: var(--fw-light);
+    box-shadow: 2px 4px 7px gray;
 }
 
 main > img{
@@ -70,7 +74,6 @@ section{
 
 .summary{
     gap: 1rem;
-    margin: .3rem;
     text-align: center;
     flex-direction: column;
 }
